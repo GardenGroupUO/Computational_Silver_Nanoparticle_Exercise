@@ -1,0 +1,266 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Chemistry Outreach Chemistry Viewer</title>
+    <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+    <link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css"/>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js" ></script>
+    
+    <script>
+        //Round a float value to x.xx format
+        function roundWithTwoDecimals(value)
+        {
+            if(typeof value == 'number'){
+                return (Math.round(value * 100)) / 100;
+            }else{
+                return value
+            }
+        }
+    
+        //Handle click on any group member
+        function handleGroupClick(event)
+        {
+            //Mark hitting point, for debugging with marker object
+            //$("#marker").attr("translation", event.hitPnt);
+            console.log(event);
+            
+            //Display coordinates of hitting point (rounded)
+            var coordinates = event.hitPnt;
+            // $("#coordX").html(roundWithTwoDecimals(coordinates[0]));
+            // $("#coordY").html(roundWithTwoDecimals(coordinates[1]));
+            // $("#coordZ").html(roundWithTwoDecimals(coordinates[2]));
+        }
+
+        //Get the distance between two atoms
+        function getDistanceBetweenTwoAtoms(atom1_id,atom2_id)
+        {
+            console.log("Getting distance between atoms list: " + atom1_id + " and " + atom2_id);
+            var atom_centre_position_str = document.getElementById("transform_"+atom1_id).getAttribute("translation");
+            var atom1_centre_position = atom_centre_position_str.split(" ").map(Number);
+            console.log(atom1_id+': '+atom1_centre_position)
+            var atom_centre_position_str = document.getElementById("transform_"+atom2_id).getAttribute("translation");
+            var atom2_centre_position = atom_centre_position_str.split(" ").map(Number);
+            console.log(atom2_id+': '+atom2_centre_position)
+
+            var x_dist = atom1_centre_position[0] - atom2_centre_position[0]
+            var y_dist = atom1_centre_position[1] - atom2_centre_position[1]
+            var z_dist = atom1_centre_position[2] - atom2_centre_position[2]
+
+            var distanceBetweenTwoAtoms = x_dist*x_dist + y_dist*y_dist + z_dist*z_dist
+            return distanceBetweenTwoAtoms
+        }
+        
+        //Handle click on a shape
+        var highlighted_atoms = ["-", "-"]
+        var highlighted_atom_positions = [['-','-','-'], ['-','-','-']]
+        function handleSingleClick(shape)
+        {
+            //$("#lastClickedObject").html($(shape).attr("def"));
+            var atom_element_number = $(shape).attr("def");
+            console.log("The new value is " + atom_element_number);
+            var atom_centre_position_str = document.getElementById("transform_"+atom_element_number).getAttribute("translation");
+            var atom_centre_position = atom_centre_position_str.split(" ").map(Number);
+            var distanceBetweenTwoAtoms = '-'
+            var has_atom_been_highlighted = highlighted_atoms.includes(atom_element_number)
+            if(!has_atom_been_highlighted){
+                if(highlighted_atoms[0]=='-'){
+                    highlighted_atoms[0] = atom_element_number
+                    highlighted_atom_positions[0] = atom_centre_position
+                }else if(highlighted_atoms[1]=='-'){
+                    highlighted_atoms[1] = atom_element_number
+                    highlighted_atom_positions[1] = atom_centre_position
+                    var distanceBetweenTwoAtoms = getDistanceBetweenTwoAtoms(highlighted_atoms[0],highlighted_atoms[1])
+                }else{
+                    var original_atom_color = document.getElementById(highlighted_atoms[0]).getAttribute("originalColor");
+                    document.getElementById(highlighted_atoms[0]).setAttribute("diffuseColor", original_atom_color);
+                    highlighted_atoms[0] = '-'
+                    highlighted_atom_positions[0] = ['-','-','-']
+                    var original_atom_color = document.getElementById(highlighted_atoms[1]).getAttribute("originalColor");
+                    document.getElementById(highlighted_atoms[1]).setAttribute("diffuseColor", original_atom_color);
+                    highlighted_atoms[1] = '-'
+                    highlighted_atom_positions[1] = ['-','-','-']
+                    highlighted_atoms[0] = atom_element_number
+                    highlighted_atom_positions[0] = atom_centre_position
+                }
+            }else{
+                if(highlighted_atoms[0]==atom_element_number){
+                    highlighted_atoms[0] = '-'
+                    highlighted_atom_positions[0] = ['-','-','-']
+                    if(!(highlighted_atoms[1] == '-')){
+                        highlighted_atoms[0] = highlighted_atoms[1]
+                        highlighted_atom_positions[0] = highlighted_atom_positions[1].slice();
+                        highlighted_atoms[1] = '-'
+                        highlighted_atom_positions[1] = ['-','-','-']
+                    }
+                }else if(highlighted_atoms[1]==atom_element_number){
+                    highlighted_atoms[1] = '-'
+                    highlighted_atom_positions[1] = ['-','-','-']
+                }
+                var original_atom_color = document.getElementById(atom_element_number).getAttribute("originalColor");
+                document.getElementById(atom_element_number).setAttribute("diffuseColor", original_atom_color);
+            }
+            console.log("highlighted list: " + highlighted_atoms);
+
+            if(!(highlighted_atoms[0]=='-')){
+                document.getElementById(highlighted_atoms[0]).setAttribute("diffuseColor", "1 1 0"); //Yellow
+            }
+            if(!(highlighted_atoms[1]=='-')){
+                document.getElementById(highlighted_atoms[1]).setAttribute("diffuseColor", "0 0 1"); //Blue
+            }
+
+            $("#Highlighted_Yellow").html(highlighted_atoms[0]);
+            $("#Highlighted_Blue").html(highlighted_atoms[1]);
+
+            $("#coordX_Yellow").html(roundWithTwoDecimals(highlighted_atom_positions[0][0]));
+            $("#coordY_Yellow").html(roundWithTwoDecimals(highlighted_atom_positions[0][1]));
+            $("#coordZ_Yellow").html(roundWithTwoDecimals(highlighted_atom_positions[0][2]));
+            
+            $("#coordX_Blue").html(roundWithTwoDecimals(highlighted_atom_positions[1][0]));
+            $("#coordY_Blue").html(roundWithTwoDecimals(highlighted_atom_positions[1][1]));
+            $("#coordZ_Blue").html(roundWithTwoDecimals(highlighted_atom_positions[1][2]));
+
+            if(distanceBetweenTwoAtoms=='-'){
+                var distanceBetweenTwoAtoms_str = '-'
+            }else{
+                var distanceBetweenTwoAtoms_str = roundWithTwoDecimals(distanceBetweenTwoAtoms/10) + ' nm ('+roundWithTwoDecimals(distanceBetweenTwoAtoms)+' Å)'
+            }
+            $("#distanceBetweenTwoAtoms").html(distanceBetweenTwoAtoms_str);
+        }
+        
+        $(document).ready(function(){
+            //Add a onclick callback to every shape
+            $("shape").each(function() { $(this).attr("onclick", "handleSingleClick(this)"); });
+        });
+    </script>
+
+<style type="text/css">
+    #demo_table {
+        border:0;
+    }
+    #demo_table img {
+        width:128px;
+        height:128px;
+    }
+    #demo_table td img
+    {
+        border:1px solid grey;
+        text-decoration:none;
+    }
+
+     #screenshotPreviews > img {
+        width:250px;
+        margin-left:25px;
+        margin-right:25px;
+     }
+</style>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function(){
+            var screenshotCount = 0;
+    
+            //Every time the user clicks on the "take screenhot" button
+            $("#btnTakeScreenshot").on("click", function() {
+                //Get data url from the runtime
+                var imgUrl = document.getElementById("boxes").runtime.getScreenshot();
+                var newScreenshotDownloadLink = document.createElement("a");
+                newScreenshotDownloadLink.href = imgUrl;
+                newScreenshotDownloadLink.download = "screenshot.png";
+                newScreenshotDownloadLink.click();
+
+    
+                // //Create preview image...
+                // var newScreenshotImage = document.createElement("img");
+                // newScreenshotImage.src = imgUrl;
+                // newScreenshotImage.id = "screenshot_" + screenshotCount;
+                // $("#screenshotPreviews").append(newScreenshotImage);
+    
+                // //...and download link
+                // var newScreenshotDownloadLink = document.createElement("a");
+                // newScreenshotDownloadLink.href = imgUrl;
+                // newScreenshotDownloadLink.download = "screenshot_" + screenshotCount + ".png";
+                // newScreenshotDownloadLink.innerHTML = "Download";
+                // $("#screenshotPreviews").append(newScreenshotDownloadLink);
+    
+                // screenshotCount++;
+                // $("#screenshotCount").html(screenshotCount);
+            });
+        });
+    </script>
+</head>
+
+<body>
+<!-- <h1>Object picking example</h1>
+<p>
+Click on any shape to get the id and the coordinates of the hitting point.
+</p> -->
+<X3D  id="boxes" showStat="false" showLog="false" x="0px" y="0px" width="500px" height="500px">
+    <Scene>
+        <Viewpoint position="-2.25680 3.36560 14.62828" orientation="-0.60104 -0.28053 0.74837 0.40903"></Viewpoint>
+        <Group onclick="handleGroupClick(event)">
+
+<!-- ################### Atoms Go In Here ################### -->
+
+        </Group>
+
+<!--             Use this object to see where you are clicking, for debugging -->
+<!--         <Transform id="marker" scale=".15 .15 .15" translation="100 0 0">
+            <Shape>
+                <Appearance>
+                    <Material diffuseColor="#FFD966"></Material>
+                </Appearance>
+                <Sphere></Sphere>
+            </Shape>
+        </Transform> -->
+    </Scene>
+</X3D>
+
+<div style="position:absolute;left:600px;top:70px;width:200px">
+    <h3>Highlighted Atoms</h3> 
+    <table style="font-size:1em;">
+        <tr><td>Yellow</td>  <td>Blue</td></tr>
+        <tr><td id="Highlighted_Yellow">-</td><td id="Highlighted_Blue">-</td></tr>
+    </table>
+    
+    <br><br>
+    
+<!--     <h3>Click coordinates:</h3>
+    <table style="font-size:1em;">
+        <tr><td></td><td>Yellow</td><td>  </td><td id=>Blue</td></tr>
+        <tr><td>X: </td><td id="coordX_Yellow">-</td><td>X: </td><td id="coordX_Blue">-</td></tr>
+        <tr><td>Y: </td><td id="coordY_Yellow">-</td><td>Y: </td><td id="coordY_Blue">-</td></tr>
+        <tr><td>Z: </td><td id="coordZ_Yellow">-</td><td>Z: </td><td id="coordZ_Blue">-</td></tr>
+    </table> -->
+
+    <br><br>
+
+    <h3>Distance between highlighted atoms:</h3>
+    <span id="distanceBetweenTwoAtoms">-</span>
+
+    <br><br>
+
+    <a href="#" id="btnTakeScreenshot">Take screenshot</a>
+
+<!--     <a href="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" download="ImageNameHere">click here</a> -->
+
+</div>
+<!-- <div style="position:absolute;left: 550px;border:1px solid #dddddd; width:300px;min-height:200px;padding:10px;">
+    <b>Screenshots: <span id="screenshotCount">0</span></b>
+    <div id="screenshotPreviews">
+    </div>
+</div> -->
+<!-- <div>
+    <a href="#" id="btnTakeScreenshot">Take screenshot</a>
+</div>
+<table id="demo_table" class="gallery">
+  <tr>
+  </tr>
+</table>
+<div style="height:420px">
+    <x3d id="canvas" width="500px" height="400px">
+        <scene id="mainScene">
+            <Inline id="inlineBox" nameSpaceName="dcm"/>
+        </scene>
+    </x3d>
+</div> -->
+</body>
+</html>
