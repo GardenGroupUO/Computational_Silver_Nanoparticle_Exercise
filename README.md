@@ -27,3 +27,7 @@
 [![Part 3.2: Why do different size Nanoprisms have different Colours?](https://img.shields.io/badge/Google%20Colab-Part%203.2%3A%20Why%20do%20different%20size%20Nanoprisms%20have%20different%20Colours%3F-blue)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/3.2_Silver_Nanoparticles_and_Colour.ipynb)
 
 [![Part 3.3: How are Nanoprisms made with different Sizes?](https://img.shields.io/badge/Google%20Colab-Part%203.3%3A%20How%20are%20Nanoprisms%20made%20with%20different%20Sizes%3F-blue)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/3.3_Shapes_of_Ag_Nanoparticles.ipynb)
+
+## Part 4: Make your own Nanoparticles
+
+[![Part 4.1: Make your own Nanoparticles](https://img.shields.io/badge/Google%20Colab-Part%204.1%3A%20Make%20your%20own%20Nanoparticles-blueviolet)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/4.1_Make_your_own_Nanoparticles.ipynb)
