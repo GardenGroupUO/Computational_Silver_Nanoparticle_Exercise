@@ -4,7 +4,8 @@
 
 ## Part 1: Getting Started
 
-[![Part 1.1: Introduction to Python3 and Jupyter/Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/1.1_Intro_to_Python3_and_Jupyter.ipynb)
+[![Part 1.1: Introduction to Python3 and Jupyter/Google Colab](https://img.shields.io/badge/Google%20Colab-Part%201.1%3A%20Introduction%20to%20Python3%20and%20Jupyter%2FGoogle%20Colab-green)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/1.1_Intro_to_Python3_and_Jupyter.ipynb)
+
 [![Part 1.2: Introduction to Atomic Simulation Environment](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/1.2_Intro_to_ASE.ipynb)
 
 ## Part 2: Learning about Nanoparticles
