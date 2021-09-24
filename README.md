@@ -6,24 +6,21 @@ Nanotechnology is a branch of chemistry that is being used in many applications 
 - In cosmetics, titanium oxide nanoparticles are use in sunscreens to protect your skin from UV light.
 - In light applications and in are, metallic nanoparticles are used because their colour can be controlled by their size and shape.
 
-In this worksheet, we will learn what nanoparticles are, what they look like and what determines their shape, and why nanoparticles of different sizes have different colours. 
+In this online lesson, we will learn what nanoparticles are, what they look like and what determines their shape, and why nanoparticles of different sizes have different colours. 
 
-This worksheet has three parts:
-
-- Part 1: Getting Started - In this section, we will learn some basics of computer programming in a programming language called "Python". We will also learn about to use these "Jupyter" worksheets which we will use for running our python programs, and the atomic simulation environment module that we will use to make our nanoparticles. 
-
-- Part 2: Nanoparticles - In this section, we will learn what a nanoparticle is and what gives a nanoparticle its shape.
-
-- Part 3: Silver Nanoprisms - In this section, we will learn about silver nanoparticles and how nanoparticles of different sizes have different colours.
-
+This lesson has four parts:
 
 ## Part 1: Getting Started
+
+In this section, we will learn some basics of computer programming in a programming language called "Python". We will also learn about to use these "Jupyter" worksheets which we will use for running our python programs, and the atomic simulation environment module that we will use to make our nanoparticles. 
 
 [![Part 1.1: Introduction to Python3 and Jupyter/Google Colab](https://img.shields.io/badge/Part%201.1-Introduction%20to%20Python3%20and%20Jupyter%2FGoogle%20Colab-orange)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/1.1_Intro_to_Python3_and_Jupyter.ipynb)
 
 [![Part 1.2: Introduction to the Atomic Simulation Environment Program](https://img.shields.io/badge/Part%201.2-Introduction%20to%20the%20Atomic%20Simulation%20Environment%20Program-orange)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/1.2_Intro_to_ASE.ipynb)
 
 ## Part 2: Learning about Nanoparticles
+
+In this section, we will learn what a nanoparticle is and what gives a nanoparticle its shape.
 
 [![Part 2.1: What are Nanoparticles?](https://img.shields.io/badge/Part%202.1-What%20are%20Nanoparticles%3F-brightgreen)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.1_What_are_Nanoparticles.ipynb)
 
@@ -36,6 +33,8 @@ This worksheet has three parts:
 [![Part 2.5: How do Metallic Nanoparticles Differ?](https://img.shields.io/badge/Part%202.5-How%20do%20Metallic%20Nanoparticles%20Differ%3F-brightgreen)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.5_Types_of_Metal_Nanoparticles.ipynb)
 
 ## Part 3: Silver Nanoprisms
+
+In this section, we will learn about silver nanoparticles and how nanoparticles of different sizes have different colours.
 
 [![Part 3.1: What do the Silver Nanoprisms look like?](https://img.shields.io/badge/Part%203.1-What%20do%20the%20Silver%20Nanoprisms%20look%20like%3F-blue)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/3.1_Appearance_of_Ag_Nanoparticles.ipynb)
 
