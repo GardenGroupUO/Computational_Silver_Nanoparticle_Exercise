@@ -1,5 +1,20 @@
-# A Computational Exercise for the Silver Nanoparticle Experiment
+# Online Computational Nanochemistry Worksheet: A Computational Exercise for the Silver Nanoparticle Experiment
 
+Nanotechnology is a branch of chemistry that is being used in many applications to solves major problems in the world. For examples:
+
+- In medicine, nanoparticles are used in drug delivery and in contrast agents in MRI machines.
+- In cosmetics, titanium oxide nanoparticles are use in sunscreens to protect your skin from UV light.
+- In light applications and in are, metallic nanoparticles are used because their colour can be controlled by their size and shape.
+
+In this worksheet, we will learn what nanoparticles are, what they look like and what determines their shape, and why nanoparticles of different sizes have different colours. 
+
+This worksheet has three parts:
+
+- Part 1: Getting Started - In this section, we will learn some basics of computer programming in a programming language called "Python". We will also learn about to use these "Jupyter" worksheets which we will use for running our python programs, and the atomic simulation environment module that we will use to make our nanoparticles. 
+
+- Part 2: Nanoparticles - In this section, we will learn what a nanoparticle is and what gives a nanoparticle its shape.
+
+- Part 3: Silver Nanoprisms - In this section, we will learn about silver nanoparticles and how nanoparticles of different sizes have different colours.
 
 
 ## Part 1: Getting Started
