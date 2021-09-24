@@ -10,15 +10,15 @@
 
 ## Part 2: Learning about Nanoparticles
 
-[![Part 2.1: What are Nanoparticles?](https://img.shields.io/badge/Part%202.1-What%20are%20Nanoparticles%3F-orange)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.1_What_are_Nanoparticles.ipynb)
+[![Part 2.1: What are Nanoparticles?](https://img.shields.io/badge/Part%202.1-What%20are%20Nanoparticles%3F-brightgreen)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.1_What_are_Nanoparticles.ipynb)
 
-[![Part 2.2: How do Nanoparticles and Molecules Differ?](https://img.shields.io/badge/Part%202.2-How%20do%20Nanoparticles%20and%20Molecules%20Differ%3F-orange)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.2_Nanoparticles_and_Molecules.ipynb)
+[![Part 2.2: How do Nanoparticles and Molecules Differ?](https://img.shields.io/badge/Part%202.2-How%20do%20Nanoparticles%20and%20Molecules%20Differ%3F-brightgreen)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.2_Nanoparticles_and_Molecules.ipynb)
 
-[![Part 2.3: What are the Faces on the Surface of a Nanoparticle?](https://img.shields.io/badge/Part%202.3-What%20are%20the%20Faces%20on%20the%20Surface%20of%20a%20Nanoparticle%3F-orange)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.3_Faces_of_a_Nanoparticle.ipynb)
+[![Part 2.3: What are the Faces on the Surface of a Nanoparticle?](https://img.shields.io/badge/Part%202.3-What%20are%20the%20Faces%20on%20the%20Surface%20of%20a%20Nanoparticle%3F-brightgreen)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.3_Faces_of_a_Nanoparticle.ipynb)
 
-[![Part 2.4: How are these Faces related to Energetics and Stability?](https://img.shields.io/badge/Part%202.4-How%20are%20these%20Faces%20related%20to%20Energetics%20and%20Stability%3F-orange)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.4_Faces_related_to_Energy_and_Stability.ipynb)
+[![Part 2.4: How are these Faces related to Energetics and Stability?](https://img.shields.io/badge/Part%202.4-How%20are%20these%20Faces%20related%20to%20Energetics%20and%20Stability%3F-brightgreen)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.4_Faces_related_to_Energy_and_Stability.ipynb)
 
-[![Part 2.5: How do Metallic Nanoparticles Differ?](https://img.shields.io/badge/Part%202.5-How%20do%20Metallic%20Nanoparticles%20Differ%3F-orange)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.5_Types_of_Metal_Nanoparticles.ipynb)
+[![Part 2.5: How do Metallic Nanoparticles Differ?](https://img.shields.io/badge/Part%202.5-How%20do%20Metallic%20Nanoparticles%20Differ%3F-brightgreen)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/2.5_Types_of_Metal_Nanoparticles.ipynb)
 
 ## Part 3: Silver Nanoprisms
 
