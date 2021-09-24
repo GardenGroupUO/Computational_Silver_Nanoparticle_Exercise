@@ -22,8 +22,8 @@
 
 ## Part 3: Silver Nanoprisms
 
+[![Part 3.1: What do the Silver Nanoprisms look like?](https://img.shields.io/badge/Google%20Colab-Part%203.1%3A%20What%20do%20the%20Silver%20Nanoprisms%20look%20like%3F-blue)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/3.1_Appearance_of_Ag_Nanoparticles.ipynb)
 
-docker test
+[![Part 3.2: Why do different size Nanoprisms have different Colours?](https://img.shields.io/badge/Google%20Colab-Part%203.2%3A%20Why%20do%20different%20size%20Nanoprisms%20have%20different%20Colours%3F-blue)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/3.2_Silver_Nanoparticles_and_Colour.ipynb)
 
-Note that is there is an error the first time you try to load this in binder, try again
-
+[![Part 3.3: How are Nanoprisms made with different Sizes?](https://img.shields.io/badge/Google%20Colab-Part%203.3%3A%20How%20are%20Nanoprisms%20made%20with%20different%20Sizes%3F-blue)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/3.3_Shapes_of_Ag_Nanoparticles.ipynb)
