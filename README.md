@@ -8,7 +8,7 @@ Nanotechnology is a branch of chemistry that is being used in many applications 
 
 In this online lesson, we will learn what nanoparticles are, what they look like and what determines their shape, and why nanoparticles of different sizes have different colours. 
 
-This lesson has four parts:
+**This lesson has four parts:**
 
 ## Part 1: Getting Started
 
