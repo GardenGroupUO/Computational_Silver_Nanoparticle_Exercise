@@ -11,9 +11,7 @@ Nanotechnology is a branch of chemistry that is being used in many applications 
 
 These notebooks are run in Google Colabs, which works like Microsoft Word but you can also perform computer programs with them. We will be using a computer program called Python to analyse nanoparticles. 
 
-To begin you will first click on the *Open in Colab* button below. This will open a notebook in Google Colab, and will tell you what to do next!
-
-Google Colabs only run on a website. **Google Colab will not be installed on your computer and will not install anything on your computer.**
+To begin you will first click on the *Open in Colab* button below. This will open a notebook in Google Colab, and will tell you what to do next! Google Colabs only run on a website. **Google Colab will not be installed on your computer and will not install anything on your computer.**
 
 **Click on the *Open in Colab* button below** to open up this online lesson in Google Colabs.  
 
