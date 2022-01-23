@@ -13,11 +13,11 @@ These notebooks are run in Google Colabs, which works like Microsoft Word but yo
 
 To begin you will first click on the *Open in Colab* button below. This will open a notebook in Google Colab, and will tell you what to do next!
 
-**Note: When you click the *Open in Colab* button, you may be ask that you need allow access to "Google Colabs".** If asked, allow Google Colabs to work with your Google Account. 
-
 Google Colabs only run on a website. **Google Colab will not be installed on your computer and will not install anything on your computer.**
 
 **Click on the *Open in Colab* button below** to open up this online lesson in Google Colabs.  
+
+**Note: When you click the *Open in Colab* button, you may be ask that you need allow access to "Google Colabs".** If asked, allow Google Colabs to work with your Google Account. 
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/Notebooks/Part_1.0_Worksheet_Title_Page.ipynb)
 
