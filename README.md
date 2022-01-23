@@ -4,6 +4,7 @@ Nanotechnology is a branch of chemistry that is being used in many applications 
 
 - In medicine, nanoparticles are used in drug delivery and in contrast agents in MRI machines.
 - In cosmetics, titanium oxide nanoparticles are use in sunscreens to protect your skin from UV light.
+- In the clothing industry, silver nanoparticles are used in materials for antibacterial purposes.
 - In light applications and in are, metallic nanoparticles are used because their colour can be controlled by their size and shape.
 
 ## How to use these notebooks
@@ -12,10 +13,13 @@ These notebooks are run in Google Colabs, which works like Microsoft Word but yo
 
 Click on the *Open in Colab* button below. This will open a notebook in Google Colab, and will tell you what to do next!
 
+**Note: When you click the *Open in Colab* button, you may be ask that you need allow access to "Google Colabs".** If asked, allow Google Colabs to work with your Google Account. 
+
+Google Colabs only run on a website. **Google Colab will not be installed on your computer and will not install anything on your computer.**
+
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/Notebooks/Part_1.0_Worksheet_Title_Page.ipynb)
 
-Note: When you click the *Open in Colab* button, you may be ask that you need allow access to "Google Colabs". This is a Google Product that is only accessed on a web browser. If asked, allow Google Colabs to work with your Google Account. Google Colab will not be installed on your computer and will not install anything on your computer. 
-
+Have fun!
 
 <!-- ## Worksheet Lessons
 
