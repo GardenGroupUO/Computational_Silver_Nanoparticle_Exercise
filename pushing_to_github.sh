@@ -2,4 +2,4 @@
 git add .
 git commit -m 'Update the Computational Silver Nanoparticle Exercise.'
 # push your new commit:
-git push -u origin main
+git push -u origin main --force
