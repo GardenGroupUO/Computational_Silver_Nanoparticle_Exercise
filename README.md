@@ -15,19 +15,19 @@ These notebooks are run in Google Colab, which works like Microsoft Word but you
 
 To begin you will first click on the *Open in Colab* button below. This will open a notebook in Google Colab, and will tell you what to do next! Google Colabs only run on a website. **Google Colab will not be installed on your computer and will not install anything on your computer.** Follow either link (A) or (B) below to get started.
 
-**(A) Using a provided Google account**
+**(A) Use a provided Google account**
 
 If you have been provided a Google account as part of this worksheet, **click on the *Open in Colab* button below** to open up this online lesson in Google Colabs.
 
 **Note: When you click the *Open in Colab* button, you may be ask that you need allow access to "Google Colab".** If asked, allow Google Colabs to work with your Google Account. 
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/Notebooks/Part_1.0_Worksheet_Title_Page.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/Notebooks/Part_1.0_Worksheet_Title_Page_provided_account.ipynb)
 
 **(B) Set up on my Google account**
 
 If you have not been provided a Google account and want to install these notebooks on your own account, **click on the Google button below**
 
-[![Set up on my Google account](https://github.com/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise_Data/blob/main/Images/google-small2.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/Notebooks/Extras_Installation.ipynb)
+[![Set up on my Google account](https://github.com/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise_Data/blob/main/Images/google-small2.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/Notebooks/Part_1.0_Worksheet_Title_Page_own_account.ipynb)
 
 Have fun!
 
