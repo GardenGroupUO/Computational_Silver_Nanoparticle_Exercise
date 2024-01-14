@@ -19,7 +19,7 @@ To begin you will first click on the *Open in Colab* button below. This will ope
 
 If you have been provided a Google account as part of this worksheet, **click on the *Open in Colab* button below** to open up this online lesson in Google Colabs.
 
-**Note: When you click the *Open in Colab* button, you may be ask that you need allow access to "Google Colab".** If asked, allow Google Colabs to work with your Google Account. 
+* **Note: When you click the *Open in Colab* button, you may be ask that you need allow access to "Google Colab".** If asked, allow Google Colabs to work with your Google Account. 
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/Notebooks/Part_1.0_Worksheet_Title_Page_provided_account.ipynb)
 
@@ -27,7 +27,7 @@ If you have been provided a Google account as part of this worksheet, **click on
 
 If you have not been provided a Google account and want to install these notebooks on your own account, **click on the Google button below**
 
-**Note: When you click the *Google* button, you may be ask that you need allow access to "Google Colab".** If asked, allow Google Colabs to work with your Google Account. 
+* **Note: When you click the *Google* button, you may be ask that you need allow access to "Google Colab".** If asked, allow Google Colabs to work with your Google Account. 
 
 [![Set up on my Google account](https://github.com/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise_Data/blob/main/Images/google-small2.svg)](https://colab.research.google.com/github/GardenGroupUO/Computational_Silver_Nanoparticle_Exercise/blob/main/Notebooks/Part_1.0_Worksheet_Title_Page_own_account.ipynb)
 
