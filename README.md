@@ -9,6 +9,10 @@ Nanotechnology is a branch of chemistry that is being used in many applications 
 
 In these notebooks we have designed a series of simulations to support a [*J. Chem. Educ.* article](https://pubs.acs.org/doi/10.1021/ed100166g) on the synthesis of different-coloured silver nanoprism suspensions, as well as explain some concepts of nanoscience, more generally.
 
+## Online help
+
+If you are having problems setting up the notebooks, you can chat with us online between 9 am and 9 pm: https://tawk.to/compnanochem
+
 ## How to use these notebooks
 
 These notebooks are run in Google Colab, which works like Microsoft Word but you can also perform computer programs with them. We will be using a computer program called Python to analyse nanoparticles. 
